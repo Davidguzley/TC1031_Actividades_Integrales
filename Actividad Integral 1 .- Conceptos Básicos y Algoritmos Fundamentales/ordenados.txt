@@ -1,0 +1,10 @@
+00045678 David Guzman Leyva 0
+11132356 Emiliano Morales Landa 10
+01010101 Julio Gomez Gonzalez 708
+99343467 Jose Rodriguez Hernandez 47551
+32148053 America Leyva Ramos 54341
+21345667 Maria Lopez Gomez 65894
+32532346 Armando Pablo Miranda 78123
+52965034 Edgar Ramirez Robles 370567
+85094325 Abigail Zapata Mendez 432950
+70649583 Emilio Barrera Hernandez 1000000
