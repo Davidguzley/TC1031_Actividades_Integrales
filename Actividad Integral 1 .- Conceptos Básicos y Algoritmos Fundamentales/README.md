@@ -1,6 +1,6 @@
 **main.cpp**
 COMPLEJIDAD TEMPORAL:
-El main comienza abriendo el archivo txt ("cuentas.h"), dentro de un while se aigna a una varible cada atributo del txt y se almacenan dentro de un objeto como propiedades o atributos para posteririormente
+El main comienza abriendo el archivo txt ("cuentas.h"), haciendo uso de un while se aigna a una varible a cada atributo del txt y estas se almacenan dentro de un objeto como propiedades o atributos para posteririormente
 guardar cada objeto dentro del vector v a medida que corre el ciclo, ya que solo recorre n pasos hasta haber leido cada linea del archivo de texto
 su complejidad temporal para el peor de los casos es O(n) o lineal para el peor de los casos.
 Una vez conseguido el vector con todos los objetos generados por el txt este es pasado como parametro a la funcion ordenaBurbuja() para ser ordenada en base a un atributo llamado dinero.
