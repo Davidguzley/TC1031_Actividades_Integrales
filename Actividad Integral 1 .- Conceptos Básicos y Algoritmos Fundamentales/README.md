@@ -6,7 +6,7 @@ Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta ban
 no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
 
 # Actividad Integral 1
-## ¿Cómo funciona y en que consiste?
+## ¿Que se hizo?
 El programa es capaz de realizar busquedas de un vector ordenado en un rango especificado por el usuario del dinero contenido en cada cuenta solicitandole donde quiere que inicie y donde quiere que termine dicho rango y poder desplegar los registros contenidos en dicho rango.
 El acrchivo "clase.h" que contiene una clase para poder asignar un sitio a cada atributo del txt y de esta manera poder manejarlos de manera independiente.
 Los unicos metodos que posee son getters para la obtencion del valor de cualquier atributo de los objetos que se instancien
@@ -42,12 +42,3 @@ El algoritmo busca la posicion de un numero o la posicion en donde deberia estar
 bot(primera pocision del vector) sea menor o igual a top(ultima posicion del vector) a medida que en cada ciclo mid divide el vector entre 2 y se busca el numero mediante condiciones repecto a mid
 Por lo que su complejidad temporal es O(log(n)) o logaritmico para el peor de los casos. Asimismo gracias a lo mencionado al principio de la explicacion de este algoritmo responde al porque de su
 seleccion para el programa
-
-
-# Actividad Integral 2
-## ¿Cómo funciona y en que consiste?
-
-
-## Análisis de complejidad temporal
-
-### main.cpp
