@@ -13,6 +13,7 @@
 
 using namespace std;
 
+//Intercambia los valores de dos variables
 template <class T>
 void swap(vector<T> &v, int i, int j) {
 	T aux = v[i];
@@ -20,6 +21,7 @@ void swap(vector<T> &v, int i, int j) {
 	v[j] = aux;
 }
 
+//Algoritmo de ordenamiento que ordena un vector
 template <class T>
 vector<T> ordenaBurbuja(vector<T> &v) {
 	for (int i = v.size() - 1; i > 0; i--) {
@@ -32,6 +34,7 @@ vector<T> ordenaBurbuja(vector<T> &v) {
 	return v;
 }
 
+//Busca un numero dentro de un vector y devuelve su posicion
 template <class T>
 int busqBinaria(vector<T> &v, int num) {
 
