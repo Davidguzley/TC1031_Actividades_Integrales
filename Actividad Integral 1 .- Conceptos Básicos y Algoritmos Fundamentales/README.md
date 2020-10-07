@@ -13,7 +13,7 @@ Los unicos metodos que posee son getters para la obtencion del valor de cualquie
 y una funcion llamada mostrar() para imprimir los atributos de un objeto en consola.
 Ademas en el arhivo de texto "ordenados.txt" se almacenan el resultado del ordenamiento hecho en el main del programa.
 
-
+**nota: ** Los casos de prueba se corren en el main por medio de las funciones del archivo "casosPrueba.txt"
 ## Análisis de complejidad temporal
 
 ### main.cpp
