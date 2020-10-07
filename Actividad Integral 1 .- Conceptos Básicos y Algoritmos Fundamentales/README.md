@@ -1,5 +1,22 @@
-**main.cpp**
-COMPLEJIDAD TEMPORAL:
+# Acerca del proyecto
+## Descripcion:
+El programa utiliza informacion de cuentas de clientes de un banco almacenada en un archivo de texto con registros o logs
+y mediante estructura de datos se usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar informacion de manera mas sencilla.
+Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta bancaria de un cliente con el siguiente formato:
+no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
+
+# Actividad Integral 1
+## ¿Cómo funciona y en que consiste?
+El programa es capaz de realizar busquedas de un vector ordenado en un rango especificado por el usuario del dinero contenido en cada cuenta solicitandole donde quiere que inicie y donde quiere que termine dicho rango y poder desplegar los registros contenidos en dicho rango.
+El acrchivo "clase.h" que contiene una clase para poder asignar un sitio a cada atributo del txt y de esta manera poder manejarlos de manera independiente.
+Los unicos metodos que posee son getters para la obtencion del valor de cualquier atributo de los objetos que se instancien
+y una funcion llamada mostrar() para imprimir los atributos de un objeto en consola.
+Ademas en el arhivo de texto "ordenados.txt" se almacenan el resultado del ordenamiento hecho en el main del programa.
+
+
+## Análisis de complejidad temporal
+
+### main.cpp
 El main comienza abriendo el archivo txt ("cuentas.h"), haciendo uso de un while se aigna a una varible a cada atributo del txt y estas se almacenan dentro de un objeto como propiedades o atributos para posteririormente
 guardar cada objeto dentro del vector v a medida que corre el ciclo, ya que solo recorre n pasos hasta haber leido cada linea del archivo de texto
 su complejidad temporal para el peor de los casos es O(n) o lineal para el peor de los casos.
@@ -11,9 +28,8 @@ Por su parte se prensentan en consola tres instrucciones para que el usuario pue
 Su cantidad de rango inicial es asignada en r_inicial y la de rango final en r_final para poder usadas como parametros para la funcion busqBinaria. La funcion obtiene los valores de las pocisiones
 las cuales son usadas en un ciclo for con complejidad temporal O(n) o lineal para el peor de los casos para desplegar en consola los registros correspondientes a las entradas del usuario.
 
-**sorts.h**
-#ordenaBurbuja
-ANALISIS DE COMPLEJIDAD TEMPORAL: 
+### sors.h
+#### ordenaBurbuja
 El algoritmo ordena los numeros de un vector en orden ascendente mediante dos ciclos for que estan sujetos entre si, en los objetos la cantidad de dinero mas grande e intercambiando su posicion con la funcion swap
 por el que se encuentra en la ultima posicion, repitiendo el proceso con cada uno de los valores restantes del vector excluyendo los ya acomodados.
 Debido a los n pasos que le toma a cada ciclo for su complijidad es n(n+1/2) y su complejidad temporal es O(n^2) o cuadratico para el peor de los casos.
@@ -21,21 +37,17 @@ La eleccion de este algoritmo fue debido a que solo se necesita el vector que le
 por lo que su complejidad espacial sera O(1) o constante ya que se genera muy poco espacio en la memoria. Asi es como decidi priorizar la complejidad espacial a la temporal ya que la cantidad
 la cantidad de n pasos que le llava al algoritmo acomodar el vector no son muchos debido a su cantidad de elementos y cada uno de estos elementos almacena un objeto.
 
-#busqBinaria
-ANALISIS DE COMPLEJIDAD TEMPORAL: 
+#### busqBinaria
 El algoritmo busca la posicion de un numero o la posicion en donde deberia estar este en un vector ordenado en orden ascendente, para ello utiliza un ciclo while que generara ciclos cuando
 bot(primera pocision del vector) sea menor o igual a top(ultima posicion del vector) a medida que en cada ciclo mid divide el vector entre 2 y se busca el numero mediante condiciones repecto a mid
 Por lo que su complejidad temporal es O(log(n)) o logaritmico para el peor de los casos. Asimismo gracias a lo mencionado al principio de la explicacion de este algoritmo responde al porque de su
-seleccion para el programa.
+seleccion para el programa
 
-**cuenta.h**
-Este programa contiene una clase para poder asignar un sitio a cada atributo del txt y de esta manera poder manejarlos de manera independiente.
-Los unicos metodos que posee son getters para la obtencion del valor de cualquier atributo de los objetos que se instancien
-y una funcion llamada mostrar() para imprimir los atributos de un objeto en consola.
 
-**cuentas.txt**
-Archivo de texto con formato de logs o bitacora en donde contiene cuentas bancarias de usuarios con el siguiente formato:
-no.cuenta(8 digitos) Nombre ApellidoPaterno ApellidoMaterno DieroCuenta.
+# Actividad Integral 2
+## ¿Cómo funciona y en que consiste?
 
-**ordenados.txt**
-En este arhivo de texto se almacenan el resultado del ordenamiento hecho en el main.
+
+## Análisis de complejidad temporal
+
+### main.cpp
