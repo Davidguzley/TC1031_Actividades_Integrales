@@ -1,7 +1,7 @@
 # Acerca del proyecto
 ## Descripcion:
 El programa utiliza informacion de cuentas de clientes de un banco almacenada en un archivo de texto con registros o logs
-y mediante estructura de datos se usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar informacion de manera mas sencilla.
+y mediante estructuras de datos usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar informacion de manera mas sencilla.
 Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta bancaria de un cliente con el siguiente formato:
 no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
 
