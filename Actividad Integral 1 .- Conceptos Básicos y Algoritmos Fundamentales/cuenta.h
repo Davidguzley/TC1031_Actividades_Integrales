@@ -1,14 +1,18 @@
-/*
+ /*
  * cuenta.h
  *
  *  Created on: 21/09/2020
  *      Author: David Guzman Leyva
+ *
+ * Description: Clase para almacenar los atributos de cada cuenta
+ * como dentro de un objeto
  */
+
 
 #ifndef CUENTA_H
 #define CUENTA_H
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Cuenta{
@@ -24,9 +28,10 @@ class Cuenta{
       apellidoM = am;
       dinero = d;
     }
-
+    
+    //Muestra los atributos en consola
     void mostrar(){
-      cout << "\n" << cuentaNum << " " << nombre << " " << apellidoP << " " << apellidoM << " " << dinero << endl;
+      cout << cuentaNum << " " << nombre << " " << apellidoP << " " << apellidoM << " " << dinero << endl;
     }
 
     string getCuentaNum(){
