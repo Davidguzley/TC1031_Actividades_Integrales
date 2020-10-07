@@ -1,7 +1,7 @@
 # Acerca del proyecto
 ## Descripcion:
 El programa utiliza informacion de cuentas de clientes de un banco almacenada en un archivo de texto con registros o logs
-y mediante estructuras de datos usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar informacion de manera mas sencilla.
+y mediante estructuras de datos usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar u organizar la informacion de manera mas sencilla.
 Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta bancaria de un cliente con el siguiente formato:
 no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
 
@@ -28,7 +28,7 @@ Por su parte se prensentan en consola tres instrucciones para que el usuario pue
 Su cantidad de rango inicial es asignada en r_inicial y la de rango final en r_final para poder usadas como parametros para la funcion busqBinaria. La funcion obtiene los valores de las pocisiones
 las cuales son usadas en un ciclo for con complejidad temporal O(n) o lineal para el peor de los casos para desplegar en consola los registros correspondientes a las entradas del usuario.
 
-### sors.h
+### sorts.h
 #### ordenaBurbuja
 El algoritmo ordena los numeros de un vector en orden ascendente mediante dos ciclos for que estan sujetos entre si, en los objetos la cantidad de dinero mas grande e intercambiando su posicion con la funcion swap
 por el que se encuentra en la ultima posicion, repitiendo el proceso con cada uno de los valores restantes del vector excluyendo los ya acomodados.
