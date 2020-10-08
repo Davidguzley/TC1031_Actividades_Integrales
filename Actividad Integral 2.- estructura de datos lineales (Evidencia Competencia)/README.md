@@ -5,7 +5,7 @@ y mediante estructuras de datos usa dicha informacion para implementar algoritmo
 Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta bancaria de un cliente con el siguiente formato:
 no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
 
-#ACTIVIDAD INTEGRAL 2
+# ACTIVIDAD INTEGRAL 2
 ## ¿Que se hizo?
 Se realizaron las correcciones pertinentes de la entrega pasada como añadir mas comentarios para que la persona pueda entender mas el codigo,
 actualizacion del README, descripciones de los archivos al inicio
