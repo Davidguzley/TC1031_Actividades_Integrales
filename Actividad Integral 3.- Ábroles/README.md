@@ -4,7 +4,7 @@ El programa utiliza informacion de cuentas de clientes de un banco almacenada en
 y mediante estructuras de datos usa dicha informacion para implementar algoritmos que ayuden al usuario a encontrar u organizar la informacion de manera mas sencilla.
 Cada registro del archivo de texto llamado "cuentas.txt" contiene una cuenta bancaria de un cliente con el siguiente formato:
 no.cuenta(8 digitos) / Nombre / ApellidoPaterno / ApellidoMaterno / DineroCuenta.
-**nota: ** Los casos de prueba se corren en el main por medio de las funciones del archivo "casosPrueba.txt"
+**nota: Los casos de prueba se corren en el main por medio de las funciones del archivo "casosPrueba.txt"
 
 # ACTIVIDAD INTEGRAL 3
 ## ¿Que se hizo?
