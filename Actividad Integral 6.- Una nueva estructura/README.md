@@ -6,14 +6,18 @@
 El counting sort es un algoritmo de ordenamiento, el cual ordena cualquier cosa a partir del conteo de numero de elementos contenidos de cada clase.
 Inicialmente se recibe un vector para posteriormente encontrar el intervalo en el que estan los datos a ordenar. Posteriormente se crea un vetor compuesto con ceros con la longitud de dicho intervalo. Finalmente se recorren los elementos a ordenar y se cuenta el numero de apariciones de cada elemento para guardarlo en el vector creado. Por lo que solo resta recorrer este vector para tener todos los elementos ordenados.
 
-## ¿Que se hizo?
-El programa es capaz de realizar busquedas de un vector ordenado en un rango especificado por el usuario del dinero contenido en cada cuenta solicitandole donde quiere que inicie y donde quiere que termine dicho rango y poder desplegar los registros contenidos en dicho rango
-El acrchivo "clase.h" que contiene una clase para poder asignar un sitio a cada atributo del txt y de esta manera poder manejarlos de manera independiente.
-Los unicos metodos que posee son getters para la obtencion del valor de cualquier atributo de los objetos que se instancien
-y una funcion llamada mostrar() para imprimir los atributos de un objeto en consola.
-Ademas en el arhivo de texto "ordenados.txt" se almacenan el resultado del ordenamiento hecho en el main del programa.
+## Uso:
+Este algoritmo se puede realizar para todos los casos en los que se necesite ordenar y saber cuantas veces aparece cada elelmento. Como por ejemplo contar y ordenar todos los votos de unos candidatos, como es el caso de este programa, contar la cantidad de nucleotidos de una cadena de ADN, Contar y ordenar monedas y billetes,etc.
 
-**nota: ** Los casos de prueba se corren en el main por medio de las funciones del archivo "casosPrueba.txt"
+## ¿Que se hizo?
+Se hizo un programa de votaciones el cual recibe un archivo de texto con registros o logs.
+Cada registro del archivo de texto llamado "votaciones.txt" contiene el voto de una persona con el siguiente formato:
+Nombre / ApellidoPaterno / ApellidoMaterno / numeroCandidato o voto.
+Con esto se almacenan los votos de los votantes y el del usuario por medio de una pregunta. Posteriormente se cuentan y ordenan todos los votos y se muestra los resultados
+Finalmente en el arhivo de texto "ordenados.txt" se almacenan el resultado de las votaciones y del ordenamiento hecho en el main del programa.
+
+**nota: ** Los casos de prueba se corren en el main por medio de la funcion del archivo "casosPrueba.txt"
+
 ## Análisis de complejidad temporal
 
 ### main.cpp
