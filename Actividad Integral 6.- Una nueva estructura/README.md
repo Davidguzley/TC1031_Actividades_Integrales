@@ -9,6 +9,8 @@ Inicialmente se recibe un vector para posteriormente encontrar el intervalo en e
 ## Uso:
 Este algoritmo se puede realizar para todos los casos en los que se necesite ordenar y saber cuantas veces aparece cada elelmento. Como por ejemplo contar y ordenar todos los votos de unos candidatos, como es el caso de este programa, contar la cantidad de nucleotidos de una cadena de ADN, Contar y ordenar monedas y billetes,etc.
 
+https://github.com/Davidguzley/TC1031_Actividades_Integrales/blob/master/Actividad%20Integral%206.-%20Una%20nueva%20estructura/Example-of-counting-sort.png
+
 ## ¿Que se hizo?
 Se hizo un programa de votaciones el cual recibe un archivo de texto con registros o logs.
 Cada registro del archivo de texto llamado "votaciones.txt" contiene el voto de una persona con el siguiente formato:
