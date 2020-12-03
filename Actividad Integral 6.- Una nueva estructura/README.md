@@ -18,7 +18,7 @@ Nombre / ApellidoPaterno / ApellidoMaterno / numeroCandidato o voto.
 Con esto se almacenan los votos de los votantes y el del usuario por medio de una pregunta. Posteriormente se cuentan y ordenan todos los votos y se muestra los resultados
 Finalmente en el arhivo de texto "ordenados.txt" se almacenan el resultado de las votaciones y del ordenamiento hecho en el main del programa.
 
-**nota:Los casos de prueba se corren en el main por medio de la funcion del archivo "casosPrueba.txt"
+**nota:Los casos de prueba se corren en el main por medio de la funcion del archivo "casosPrueba.txt"**
 
 ## Análisis de complejidad temporal
 
