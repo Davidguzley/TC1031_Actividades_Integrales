@@ -7,7 +7,7 @@ El counting sort es un algoritmo de ordenamiento, el cual ordena cualquier cosa 
 Inicialmente se recibe un vector para posteriormente encontrar el intervalo en el que estan los datos a ordenar. Posteriormente se crea un vetor compuesto con ceros con la longitud de dicho intervalo. Finalmente se recorren los elementos a ordenar y se cuenta el numero de apariciones de cada elemento para guardarlo en el vector creado. Por lo que solo resta recorrer este vector para tener todos los elementos ordenados.
 
 ## Uso:
-Este algoritmo se puede realizar para todos los casos en los que se necesite ordenar y saber cuantas veces aparece cada elelmento. Como por ejemplo contar y ordenar todos los votos de unos candidatos, como es el caso de este programa, contar la cantidad de nucleotidos de una cadena de ADN, Contar y ordenar monedas y billetes,etc.
+Este algoritmo se puede realizar para todos los casos en los que se necesite ordenar y saber cuantas veces aparece cada elelmento. Como por ejemplo contar y ordenar todos los votos de unos candidatos, como es el caso de este programa, contar la cantidad de nucleotidos de una cadena de ADN, Contar y ordenar monedas y billetes,etc. Esto sucede gracias a que todos sus algoritmos pueden trabajar con enteros, flotantes y strings como por ejemplo palabras, dinero, numeros de cuenta, etc.
 
 ![alt tag](https://github.com/Davidguzley/TC1031_Actividades_Integrales/blob/master/Actividad%20Integral%206.-%20Una%20nueva%20estructura/Example-of-counting-sort.png)
 
@@ -23,28 +23,17 @@ Finalmente en el arhivo de texto "ordenados.txt" se almacenan el resultado de la
 ## Análisis de complejidad temporal
 
 ### main.cpp
-El main comienza abriendo el archivo txt ("cuentas.h"), haciendo uso de un while se aigna a una varible a cada atributo del txt y estas se almacenan dentro de un objeto como propiedades o atributos para posteririormente
-guardar cada objeto dentro del vector v a medida que corre el ciclo, ya que solo recorre n pasos hasta haber leido cada linea del archivo de texto
-su complejidad temporal para el peor de los casos es O(n) o lineal para el peor de los casos.
-Una vez conseguido el vector con todos los objetos generados por el txt este es pasado como parametro a la funcion ordenaBurbuja() para ser ordenada en base a un atributo llamado dinero.
-Para poder imprimir los datos ordenados utilicé un ciclo for con complejidad temporal O(n) o lineal para el peor de los casos para que se imprimiera con mostrar() todos los objetos del vector, este proceso se podria tomar prueba solamente ya que es solo para verificar que la funcion halla ordenado todos los datos bien.
-Ya mostrados los datos ordenados el codigo prosigue a guardar en un archivo de texto llamado ("ordenados.txt") los resultaodos del ordenamiento por medio de el ordenamiento e insercion de cada atributo
-de los objetos del vector mediante sus getters y un ciclo for con complejidad temporal O(n) o lineal para el peor de los casos para recorrer todo el vector.
-Por su parte se prensentan en consola tres instrucciones para que el usuario pueda definir un rango de cantidad de dinero en cuentas para poder buscarlo.
-Su cantidad de rango inicial es asignada en r_inicial y la de rango final en r_final para poder usadas como parametros para la funcion busqBinaria. La funcion obtiene los valores de las pocisiones
-las cuales son usadas en un ciclo for con complejidad temporal O(n) o lineal para el peor de los casos para desplegar en consola los registros correspondientes a las entradas del usuario.
+El main comienza abriendo el archivo txt ("votaciones.h"), haciendo uso de un while se aigna a una varible a cada atributo del txt y guarda el voto de cada persona en el vector votos, ya que solo recorre n pasos hasta haber leido cada linea del archivo de textosu complejidad temporal para el peor de los casos es O(n) o lineal para el peor de los casos.
+Una vez conseguido el vector con todos los votos del txt se pregunta y se despliega en pantalla los candidatos, para que  el suario vote y se guarde su voto en el vector. Fialmente ese vector es pasado a la funcion countSort() para contar cada elemento y ordenar el vector.
+Para poder imprimir los datos ordenados y el resultado de las votaciones utilicé las funciones toStringCount() y toStringArray(). Por lo que su complejidad temporal es O(1) o lineal para el peor de los casos.
+Ya mostradoslos resultados el codigo prosigue a guardarlos en un archivo de texto llamado ("resultados.txt"). Por lo que la complejidad es la misma que la anterior.
 
-### sorts.h
-#### ordenaBurbuja
-El algoritmo ordena los numeros de un vector en orden ascendente mediante dos ciclos for que estan sujetos entre si, en los objetos la cantidad de dinero mas grande e intercambiando su posicion con la funcion swap
-por el que se encuentra en la ultima posicion, repitiendo el proceso con cada uno de los valores restantes del vector excluyendo los ya acomodados.
-Debido a los n pasos que le toma a cada ciclo for su complijidad es n(n+1/2) y su complejidad temporal es O(n^2) o cuadratico para el peor de los casos.
-La eleccion de este algoritmo fue debido a que solo se necesita el vector que le pasamos como parametro en la funcion y la funcion swap para poder trabajar con el algoritmo,
-por lo que su complejidad espacial sera O(1) o constante ya que se genera muy poco espacio en la memoria. Asi es como decidi priorizar la complejidad espacial a la temporal ya que la cantidad
-la cantidad de n pasos que le llava al algoritmo acomodar el vector no son muchos debido a su cantidad de elementos y cada uno de estos elementos almacena un objeto.
+### counting.h
+#### countSort
+El algoritmo su entrada para la ordenación de conteo consiste en una colección de n elementos, cada uno de los cuales tiene una clave de número entero no negativo cuyo valor  máximo es como máximo k, por lo que su complejidad temporal es O(n+k) para el peor de los casos, esto significa que es mejor que O(n) devido a que el numero de pasos esta deliminato por el valor maximo o k que tiene los datos del arreglo.
 
-#### busqBinaria
-El algoritmo busca la posicion de un numero o la posicion en donde deberia estar este en un vector ordenado en orden ascendente, para ello utiliza un ciclo while que generara ciclos cuando
-bot(primera pocision del vector) sea menor o igual a top(ultima posicion del vector) a medida que en cada ciclo mid divide el vector entre 2 y se busca el numero mediante condiciones repecto a mid
-Por lo que su complejidad temporal es O(log(n)) o logaritmico para el peor de los casos. Asimismo gracias a lo mencionado al principio de la explicacion de este algoritmo responde al porque de su
-seleccion para el programa
+#### toStringCount
+El algoritmo recorre n pasos debido a un ciclo while que correra hasta haber encontrado el numero de apariciones de cada uno de los candidatos. Devolviendo en un string los votos de cada candidato, por lo que su complejidad temporal es O(n) o lineal para el peor de los casos debido a la compejidad O(n) del ciclo.
+
+### toStringArray
+El algoritmo recorre n pasos, ya que usa un ciclo while que recorre cada valor del arreglo data hasta llegar a count, mientras que en cada ciclo almacena en un string el numero de cuenta de cada cliente, por lo que su complejidad temporal es O(n) o lineal para el peor de los casos debido a la compejidad O(n) del ciclo.
